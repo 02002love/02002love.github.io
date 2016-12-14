@@ -208,11 +208,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-swift/Swift(六)-convenience-构造函数" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/12/14/1/" class="article-date">
-      <time datetime="2016-12-14T08:00:04.000Z" itemprop="datePublished">2016-12-14</time>
+      <a href="/2016/12/14/swift/Swift(六)-convenience-构造函数/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
 </a>
     </div>
   
@@ -224,10 +224,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p>这是一个伤感的故事</p>
-</blockquote>
-<p><img src="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg" alt="我的作品"></p>
+        <p>创建 swift 文件,命名规则见名知义<br><img src="http://upload-images.jianshu.io/upload_images/1155000-f8210ed309fad050.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建的文件类型"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  Button-Ext.swift</span><br><span class="line">//  SwiftTest2</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/9.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import Foundation</span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">extension UIButton &#123;</span><br><span class="line"></span><br><span class="line">    convenience init(name: String) &#123;</span><br><span class="line">        self.init()</span><br><span class="line">        print(name)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -254,11 +252,11 @@
 
 
   
-    <article id="post-pictures" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-swift/Swift(四)--异常处理--try" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/12/14/pictures/" class="article-date">
-      <time datetime="2016-12-14T08:00:04.000Z" itemprop="datePublished">2016-12-14</time>
+      <a href="/2016/12/14/swift/Swift(四)--异常处理--try/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
 </a>
     </div>
   
@@ -270,10 +268,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p>这是一个伤感的故事</p>
-</blockquote>
-<p><img src="http://p1.bqimg.com/4851/6b05a1aebd051117.jpg" alt="我的作品"></p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  Swift_try</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/8.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line"></span><br><span class="line">        /*提供三种处理异常的方式</span><br><span class="line">         ①try  方式   手动处理</span><br><span class="line">         ②try? 方式   自动处理(常用) 如果有返回 nil 如果没有直接返回相应的对象</span><br><span class="line">         guard let name = try? 方法 else &#123;</span><br><span class="line">             return</span><br><span class="line">         &#125;</span><br><span class="line">         ③try! 方式   告诉系统改方法无异常 如果出现直接 trash(不建议)</span><br><span class="line">         */</span><br><span class="line">        //正则表达式</span><br><span class="line">        //创建正则的规则</span><br><span class="line">        let pattern = &quot;sjw&quot;</span><br><span class="line">        //创建正则表达式的对象</span><br><span class="line">        guard let regex = try? NSRegularExpression(pattern: pattern, options: .CaseInsensitive) else &#123;</span><br><span class="line">            return</span><br><span class="line">        &#125;</span><br><span class="line">        print(regex)   </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -300,11 +295,11 @@
 
 
   
-    <article id="post-ss" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-swift/Swift(十五)-好用的SwiftMessages的第三方库的封装" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/17/ss/" class="article-date">
-      <time datetime="2016-03-17T05:20:21.000Z" itemprop="datePublished">2016-03-17</time>
+      <a href="/2016/12/14/swift/Swift(十五)-好用的SwiftMessages的第三方库的封装/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
 </a>
     </div>
   
@@ -313,23 +308,15 @@
       <input type="hidden" class="isFancy" />
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/17/ss/">news</a>
-    </h1>
-  
-
-      </header>
-      
-    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p> this is a test, come on , join us</p>
-<h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图" target="_blank" rel="external">流程图</a></h3> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">op=&gt;operation: Your Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">e=&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
-<p>int a = 10 ;<br>    printf(“a = %d” , a);<br>    <img src="http://photocdn.sohu.com/20141130/Img406511120.jpeg" alt="此处输入图片的描述"></p>
+        <p><img src="http://upload-images.jianshu.io/upload_images/1155000-3bc169ae8d6861c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="失败"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155000-0a0b81649ad89a24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="成功"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155000-91355ba508d93bc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="信息"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  SwiftMessageManager.swift</span><br><span class="line">//  showAlertMessage</span><br><span class="line">//</span><br><span class="line">//  Created by 宋金委 on 16/8/30.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line">import SwiftMessages</span><br><span class="line"></span><br><span class="line">//布局样式</span><br><span class="line">enum  LayoutType : String&#123;</span><br><span class="line">    </span><br><span class="line">    case MessageView</span><br><span class="line">    </span><br><span class="line">    case CardView</span><br><span class="line">    </span><br><span class="line">    case TabView</span><br><span class="line">    </span><br><span class="line">    case StatusLine</span><br><span class="line">    </span><br><span class="line">    case MessageViewIOS8</span><br><span class="line">&#125;</span><br><span class="line">//消息类型</span><br><span class="line">public enum ThemeType : String &#123;</span><br><span class="line">    case Info</span><br><span class="line">    </span><br><span class="line">    case Success</span><br><span class="line">    </span><br><span class="line">    case Warning</span><br><span class="line">    </span><br><span class="line">    case Error</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class SwiftMessageManager: NSObject &#123;</span><br><span class="line">    </span><br><span class="line">    /**</span><br><span class="line">     生产 status 的抽取方法</span><br><span class="line">     </span><br><span class="line">     - parameter layoutType:            布局样式</span><br><span class="line">     - parameter themeType:             消息类型</span><br><span class="line">     - parameter iconImageType:         消息图标的类型</span><br><span class="line">     - parameter presentationStyleType: 模态的位置</span><br><span class="line">     - parameter title:                 标题</span><br><span class="line">     - parameter body:                  说明文字</span><br><span class="line">     - parameter isHiddenBtn:           是否 隐藏 按钮</span><br><span class="line">     - parameter seconds:               显示的时间</span><br><span class="line">     */</span><br><span class="line">    </span><br><span class="line">    class func showMessage(layoutType:LayoutType, themeType :ThemeType ,iconImageType : IconStyle, presentationStyleType :SwiftMessages.PresentationStyle, title :String,body:String, isHiddenBtn: Bool,seconds :NSTimeInterval) &#123;</span><br><span class="line">        </span><br><span class="line">        var view = MessageView.viewFromNib(layout: .MessageView)</span><br><span class="line">        </span><br><span class="line">        switch layoutType &#123;</span><br><span class="line">        case .MessageView:</span><br><span class="line">            print(&quot;已经在初始化的时候执行过&quot;)</span><br><span class="line">            </span><br><span class="line">        case .CardView:</span><br><span class="line">            view = MessageView.viewFromNib(layout: .CardView)</span><br><span class="line">            </span><br><span class="line">        case .TabView:</span><br><span class="line">            view = MessageView.viewFromNib(layout: .TabView)</span><br><span class="line">            </span><br><span class="line">        case .StatusLine:</span><br><span class="line">            view = MessageView.viewFromNib(layout: .StatusLine)</span><br><span class="line">            </span><br><span class="line">        default:</span><br><span class="line">            </span><br><span class="line">            view = MessageView.viewFromNib(layout: .MessageViewIOS8)</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        view.configureContent(title: title, body: body, iconImage: nil, iconText: nil, buttonImage: nil, buttonTitle: &quot;隐藏&quot;, buttonTapHandler: &#123; _ in SwiftMessages.hide() &#125;)</span><br><span class="line">        </span><br><span class="line">        switch themeType &#123;</span><br><span class="line">            </span><br><span class="line">        case .Success:</span><br><span class="line">            </span><br><span class="line">            view.configureTheme(.Success, iconStyle:iconImageType)</span><br><span class="line">            </span><br><span class="line">        case .Warning:</span><br><span class="line">            view.configureTheme(.Warning, iconStyle:iconImageType)</span><br><span class="line">            </span><br><span class="line">        case .Error:</span><br><span class="line">            view.configureTheme(.Error, iconStyle:iconImageType)</span><br><span class="line">            </span><br><span class="line">        default:</span><br><span class="line">            </span><br><span class="line">            view.configureTheme(.Info, iconStyle:iconImageType)</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        view.button?.hidden = isHiddenBtn;</span><br><span class="line">        </span><br><span class="line">        var infoConfig = SwiftMessages.Config()</span><br><span class="line">        </span><br><span class="line">        infoConfig.presentationStyle = presentationStyleType</span><br><span class="line">        </span><br><span class="line">        infoConfig.duration = .Seconds(seconds: seconds)</span><br><span class="line">        </span><br><span class="line">        SwiftMessages.show(config: infoConfig, view: view)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>调用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  showAlertMessage</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/30.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line">import SwiftMessages</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    </span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    @IBAction func clickBtn(sender: AnyObject) &#123;</span><br><span class="line">        </span><br><span class="line">        switch (sender as! UIButton).tag  &#123;</span><br><span class="line">            </span><br><span class="line">        case 0:</span><br><span class="line">            </span><br><span class="line">            print(&quot;消息&quot;)</span><br><span class="line">            </span><br><span class="line">            SwiftMessageManager.showMessage(.MessageView, themeType:.Info, iconImageType:.Light, presentationStyleType:.Top, title: &quot;信息&quot;, body: &quot;我成功了&quot;, isHiddenBtn: true, seconds: 5)</span><br><span class="line">            </span><br><span class="line">        case 1:</span><br><span class="line">            print(&quot;成功&quot;)</span><br><span class="line">            SwiftMessageManager.showMessage(.MessageView, themeType:.Success, iconImageType:.Light, presentationStyleType:.Top, title: &quot;信息&quot;, body: &quot;我成功了&quot;, isHiddenBtn: false, seconds: 5)</span><br><span class="line">            </span><br><span class="line">        case 2:</span><br><span class="line">            print(&quot;错误&quot;)</span><br><span class="line">            SwiftMessageManager.showMessage(.MessageView, themeType:.Error, iconImageType:.Light, presentationStyleType:.Top, title: &quot;信息&quot;, body: &quot;我失败了&quot;, isHiddenBtn: true, seconds: 5)</span><br><span class="line">        case 3:</span><br><span class="line">            print(&quot;警告&quot;)</span><br><span class="line">            SwiftMessageManager.showMessage(.MessageView, themeType:.Warning, iconImageType:.Light, presentationStyleType:.Top, title: &quot;信息&quot;, body: &quot;我成功了&quot;, isHiddenBtn: true, seconds: 1)</span><br><span class="line">            </span><br><span class="line">        default:</span><br><span class="line">            print(&quot;自定义&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>代码在这 <a href="https://git.coding.net/02002love/showAlertMessage.git" target="_blank" rel="external">点我</a></p>
 
       
     </div>
@@ -337,16 +324,8 @@
     <div class="article-info article-info-index">
       
       
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/测试/">测试</a>
-    </div>
-
 
       
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/我/">我</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日记/">日记</a></li></ul>
-    </div>
-
       
       <div class="clearfix"></div>
     </div>
@@ -364,6 +343,314 @@
 
 
   
+    <article id="post-swift/Swift(一)-函数封装--自定义-Log函数" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><img src="http://upload-images.jianshu.io/upload_images/1155000-728950378d0e8148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配图.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> 自定义 Log 函数</span><br><span class="line"> </span><br><span class="line"> - parameter log:     log内容</span><br><span class="line"> - parameter file:    log 函数所在的文件</span><br><span class="line"> - parameter method:  log 函数所在的方法</span><br><span class="line"> - parameter lineNum: log 函数所在的行数</span><br><span class="line"> */</span><br><span class="line">func SLog&lt;T&gt;(log:T,file : String = #file , method :String = #function , lineNum : Int = #line) &#123;</span><br><span class="line">    //Debug需要在 info.plist 文件配置,详见配图</span><br><span class="line">    #if Debug</span><br><span class="line">        </span><br><span class="line">    let fileName = ( file as NSString ).lastPathComponent</span><br><span class="line">    print(&quot;[\(fileName) : \(method)] Line:\(lineNum) Log:\(log)&quot; )</span><br><span class="line"></span><br><span class="line">    #endif</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-swift/Swift(七)-封装-AFNetworking3-1(未完成)" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/14/swift/Swift(七)-封装-AFNetworking3-1(未完成)/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//</span><br><span class="line">//  AFNetworkingManager.swift</span><br><span class="line">//  swift-AFNetworking</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/9.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import AFNetworking</span><br><span class="line">//自定义枚举类型</span><br><span class="line">enum RequestType &#123;</span><br><span class="line">    case GET        //get请求</span><br><span class="line">    case POST       //post请求</span><br><span class="line">    case DOWNLOAD   //下载请求</span><br><span class="line">    case UPLOAD     //上传请求</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class AFNetworkingManager: AFHTTPSessionManager &#123;</span><br><span class="line">    //单例模式 使用闭包对实例进行值设定</span><br><span class="line">    static let shareObject : AFNetworkingManager = &#123;</span><br><span class="line">        let manager = AFNetworkingManager()</span><br><span class="line">        //对于 set 对象可以进行 insert 方法进行设定值</span><br><span class="line">        manager.responseSerializer.acceptableContentTypes? = [&quot;text/html&quot;,&quot;text/plain&quot;,&quot;application/json&quot;]</span><br><span class="line">        </span><br><span class="line">        return manager</span><br><span class="line">    &#125;()</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">extension AFNetworkingManager &#123;</span><br><span class="line">    /**</span><br><span class="line">     请求数据函数</span><br><span class="line">     </span><br><span class="line">     - parameter requestType: 请求类型</span><br><span class="line">     - parameter urlString:   请求 url</span><br><span class="line">     - parameter parameters:  请求字典参数</span><br><span class="line">     - parameter returnData:  请求返回的闭包 用于数据回调</span><br><span class="line">     */</span><br><span class="line">    func requestData(requestType: RequestType , urlString :String , parameters :[String : AnyObject]?,returnData : (result : AnyObject?,error : NSError?)-&gt;()) &#123;</span><br><span class="line">        </span><br><span class="line">        //去除 URL 中的ASSIC 码</span><br><span class="line">        let urlString = urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!</span><br><span class="line">        print(urlString)</span><br><span class="line">        </span><br><span class="line">        //请求成功闭包</span><br><span class="line">        let success = &#123; (task : NSURLSessionDataTask,result : AnyObject?) in</span><br><span class="line">            print(result)</span><br><span class="line">            returnData(result: result,error: nil)</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        //请求失败闭包</span><br><span class="line">        let failure = &#123; (task : NSURLSessionDataTask?,error : NSError) in</span><br><span class="line">            print(error)</span><br><span class="line">            returnData(result: nil, error: error)</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        if requestType == .GET &#123;//get 类型请求</span><br><span class="line">            </span><br><span class="line">            GET(urlString, parameters: parameters,progress : nil, success: success , failure: failure)</span><br><span class="line">            </span><br><span class="line">        &#125; else if requestType == .POST&#123;//post 类型请求</span><br><span class="line">            </span><br><span class="line">            POST(urlString, parameters: parameters, progress: nil, success: success, failure: failure)</span><br><span class="line">            </span><br><span class="line">        &#125; else if requestType == .DOWNLOAD &#123;//下载 类型请求</span><br><span class="line">            </span><br><span class="line">        &#125; else if requestType == .UPLOAD &#123;//上传 类型请求</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>调用例子 AFNetworkingManager.shareObject.requestData()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//get 请求</span><br><span class="line">AFNetworkingManager.shareObject.requestData(.GET, urlString: &quot;http://httpbin.org/get&quot;, parameters: [&quot;name&quot; : &quot;SongJinwei&quot;,&quot;age&quot; : 25]) &#123; (result, error) in</span><br><span class="line">            print(result)</span><br><span class="line">        &#125;</span><br><span class="line">//post 请求</span><br><span class="line">AFNetworkingManager.shareObject.requestData(.POST, urlString: &quot;http://httpbin.org/post&quot;, parameters: [&quot;name&quot; : &quot;SongJinwei&quot;,&quot;age&quot; : 25]) &#123; (result, error) in</span><br><span class="line">            print(result)</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-swift/Swift(三)--函数封装--根据字符串创建对应的对象" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/14/swift/Swift(三)--函数封装--根据字符串创建对应的对象/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">     根据字符串创建对应的对象</span><br><span class="line">     </span><br><span class="line">     - parameter VCName: 类名称的字符串</span><br><span class="line">     */</span><br><span class="line">    func createVCObjectFromString(VCName:String) &#123;</span><br><span class="line">        </span><br><span class="line">        //获取命名空间</span><br><span class="line">        guard let nameSpace = NSBundle.mainBundle().infoDictionary![&quot;CFBundleExecutable&quot;] as? String else&#123;</span><br><span class="line">            print(&quot;命名空间获取失败&quot;)</span><br><span class="line">            return</span><br><span class="line">        &#125;</span><br><span class="line">        print(&quot;命名空间:\(nameSpace)&quot;)</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        //获取 Class 的可选类型</span><br><span class="line">        guard let className = NSClassFromString(nameSpace + &quot;.&quot; + VCName) else &#123;</span><br><span class="line">            print(&quot;className获取失败&quot;)</span><br><span class="line">            return</span><br><span class="line">        &#125;</span><br><span class="line">        print(&quot;className:\(className)&quot;)</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        //转成控制器类型</span><br><span class="line">        guard let classType = className as? UIViewController.Type else&#123;</span><br><span class="line">            print(&quot;类型转换失败&quot;)</span><br><span class="line">         return</span><br><span class="line">        &#125;</span><br><span class="line">        print(&quot;控制器类型:\(classType)&quot;)</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        //创建对应的类型的控制器</span><br><span class="line">        let VCObject = classType.init()</span><br><span class="line">        print(&quot;最后创建的对象:\(VCObject)&quot;)</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-swift/Swift(九)-正则表达式初探" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/14/swift/Swift(九)-正则表达式初探/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  regularException</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/10.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line"></span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">       </span><br><span class="line">        let initString = &quot;15225124020&quot;</span><br><span class="line">        //正则规则</span><br><span class="line">        //规则:</span><br><span class="line">        /*</span><br><span class="line">         ① [a-z]        :表示匹配 a~z 的字母 例如: a</span><br><span class="line">         ② [0-9]或者\\d  :表示匹配 0~9 数字</span><br><span class="line">         ③ ^[a]         :表示匹配以a字母开头的字串</span><br><span class="line">         ④ \\d&#123;2&#125;       :表示匹配两个紧挨着的两个数字的字串</span><br><span class="line">         ⑤ [a-z]&#123;2,10&#125;  :表示匹配字母有2~10字母相邻的字串</span><br><span class="line">         ⑥ //d[a-z]$    :表示匹配以字母为结尾的字串</span><br><span class="line">         ⑦ ^[^0-9]      :表示匹配不能以数字开头的字串</span><br><span class="line">         */</span><br><span class="line">        let pattern = &quot;^[1][34578]\\d&#123;9&#125;$&quot;</span><br><span class="line">        </span><br><span class="line">        //正则表达式对象</span><br><span class="line">        guard let regex = try? NSRegularExpression(pattern: pattern, options: []) else &#123;</span><br><span class="line">        </span><br><span class="line">            return</span><br><span class="line">        &#125;</span><br><span class="line">        //匹配返回的数组</span><br><span class="line">        let resultArray = regex.matchesInString(initString, options: [], range: NSRange(location: 0, length: initString.characters.count))</span><br><span class="line">        </span><br><span class="line">        //遍历</span><br><span class="line">        for result in resultArray &#123;</span><br><span class="line">            </span><br><span class="line">            print((initString as NSString).substringWithRange(result.range))</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-swift/Swift(二)--简单使用-tableView" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/14/swift/Swift(二)--简单使用-tableView/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  swiftTableView</span><br><span class="line">//</span><br><span class="line">//  Created by 宋金委 on 16/8/7.</span><br><span class="line">//  Copyright © 2016年 song. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    </span><br><span class="line">    lazy var tableVIew = UITableView()</span><br><span class="line">    </span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        tableVIew.frame = view.bounds</span><br><span class="line">        view.addSubview(tableVIew)</span><br><span class="line">        tableVIew.dataSource = self</span><br><span class="line">        tableVIew.delegate = self</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// MARK: - UITableViewDataSource,UITableViewDelegate</span><br><span class="line">extension ViewController :UITableViewDataSource,UITableViewDelegate &#123;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int &#123;</span><br><span class="line">        return 10;</span><br><span class="line">    &#125;</span><br><span class="line">    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell &#123;</span><br><span class="line">        </span><br><span class="line">        let cellID  = &quot;cellID&quot;</span><br><span class="line">        var cell = tableView.dequeueReusableCellWithIdentifier(cellID)</span><br><span class="line">        </span><br><span class="line">        if cell == nil &#123;</span><br><span class="line">            cell = UITableViewCell(style: .Default, reuseIdentifier: cellID)</span><br><span class="line">        &#125;</span><br><span class="line">        cell?.textLabel?.text = &quot;123&quot;</span><br><span class="line">        return cell!</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) &#123;</span><br><span class="line">        print(&quot;click :\(indexPath.row)&quot;)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-swift/Swift(五)-按钮点击,新调用的形式" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/14/swift/Swift(五)-按钮点击,新调用的形式/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  SwiftTest2</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/8.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    </span><br><span class="line">    @IBOutlet weak var btn: UIButton!</span><br><span class="line">    </span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        createVCObjectFromString(&quot;SViewController&quot;)</span><br><span class="line">        //#selector(click) 新形式调用点击方法</span><br><span class="line">        btn.addTarget(self, action:#selector(click), forControlEvents: .TouchUpInside)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @objc private  func click()&#123;</span><br><span class="line">        print(&quot;123132&quot;)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-swift/Swift(八)-完成Sina授权,获取accessToken" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>公共文件定义 Sina 的分发的 key<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  Global.swift</span><br><span class="line">//  swift-AFNetworking</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/10.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import Foundation</span><br><span class="line"></span><br><span class="line">let AppKey = &quot;2259417197&quot;</span><br><span class="line">let AppSecret = &quot;d46412dd47e35a075a645d33618a8007&quot;</span><br><span class="line">let redirect_uri = &quot;http://www.jianshu.com&quot;</span><br></pre></td></tr></table></figure></p>
+<p>授权页加载,所用的网络请求已经在<a href="http://www.jianshu.com/p/2735edbc6549" target="_blank" rel="external">上一篇</a>笔记中完成,不懂请查看.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  AuthViewController.swift</span><br><span class="line">//  swift-AFNetworking</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/10.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line">import SVProgressHUD</span><br><span class="line"></span><br><span class="line">class AuthViewController: UIViewController &#123;</span><br><span class="line">    </span><br><span class="line">    @IBOutlet weak var webV: UIWebView!</span><br><span class="line">    </span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        //设置 navigationController</span><br><span class="line">        setNav()</span><br><span class="line">        //加载 webview 的授权</span><br><span class="line">        authorToSina(AppKey, appURL: redirect_uri)</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">// MARK: - 控制器NavigationController的设置</span><br><span class="line">extension AuthViewController &#123;</span><br><span class="line">    </span><br><span class="line">    private func setNav()&#123;</span><br><span class="line">        </span><br><span class="line">        navigationItem.leftBarButtonItem = UIBarButtonItem(title: &quot;返回&quot;, style: .Plain, target: self, action: #selector(back))</span><br><span class="line">        navigationItem.rightBarButtonItem = UIBarButtonItem(title: &quot;自动登录&quot;, style: .Plain, target: self, action: #selector(autoLogin))</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    //返回</span><br><span class="line">    func back() &#123;</span><br><span class="line">        dismissViewControllerAnimated(true, completion: nil)</span><br><span class="line">    &#125;</span><br><span class="line">    //自动登录</span><br><span class="line">    func autoLogin() &#123;</span><br><span class="line">        //思路:注入 js 代码到 webView</span><br><span class="line">        let jsString = &quot;document.getElementById(&apos;userId&apos;).value=&apos;15225124020&apos;;document.getElementById(&apos;passwd&apos;).value=&apos;自己账户的密码&apos;;&quot;</span><br><span class="line">        webV.stringByEvaluatingJavaScriptFromString(jsString)</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    func authorToSina(appkey:String,appURL:String) &#123;</span><br><span class="line">        </span><br><span class="line">        webV.loadRequest(NSURLRequest(URL: NSURL(string: &quot;https://api.weibo.com/oauth2/authorize?client_id=\(appkey)&amp;redirect_uri=\(appURL)&quot;)!))</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//MARK:- webView 代理</span><br><span class="line">extension AuthViewController: UIWebViewDelegate&#123;</span><br><span class="line">    </span><br><span class="line">    func webViewDidStartLoad(webView: UIWebView) &#123;</span><br><span class="line">        SVProgressHUD.show()</span><br><span class="line">    &#125;</span><br><span class="line">    func webViewDidFinishLoad(webView: UIWebView) &#123;</span><br><span class="line">        SVProgressHUD.dismiss()</span><br><span class="line">    &#125;</span><br><span class="line">    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) &#123;</span><br><span class="line">        SVProgressHUD.dismiss()</span><br><span class="line">    &#125;</span><br><span class="line">    //</span><br><span class="line">    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -&gt; Bool &#123;</span><br><span class="line">        </span><br><span class="line">        guard let url = request.URL else &#123;</span><br><span class="line">            </span><br><span class="line">            return true</span><br><span class="line">        &#125;</span><br><span class="line">        guard url.absoluteString.containsString(&quot;code=&quot;)else &#123;</span><br><span class="line">            </span><br><span class="line">            return true</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        let separateArray = url.absoluteString.componentsSeparatedByString(&quot;code=&quot;)</span><br><span class="line">        //获取 code</span><br><span class="line">        let code = separateArray.last</span><br><span class="line">        getAccessToken(code!)</span><br><span class="line">        print(code)</span><br><span class="line">        return false</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// MARK: - 用sina 返回的 code 获取 accessToken</span><br><span class="line">extension AuthViewController &#123;</span><br><span class="line"></span><br><span class="line">    private func getAccessToken(code : String) &#123;</span><br><span class="line">        </span><br><span class="line">        let staticURL = &quot;https://api.weibo.com/oauth2/access_token&quot;</span><br><span class="line">        //&quot;grant_type&quot;:&quot;authorization_code&quot; 固定写法</span><br><span class="line">        let parameters = [&quot;client_id&quot;:AppKey, &quot;client_secret&quot;:AppSecret, &quot;grant_type&quot;:&quot;authorization_code&quot;, &quot;redirect_uri&quot;:redirect_uri, &quot;code&quot;:code]</span><br><span class="line">        AFNetworkingManager.shareObject.requestData(.POST, urlString: staticURL, parameters: parameters) &#123; (result, error) in</span><br><span class="line">            </span><br><span class="line">            print(result)</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       <footer id="footer">

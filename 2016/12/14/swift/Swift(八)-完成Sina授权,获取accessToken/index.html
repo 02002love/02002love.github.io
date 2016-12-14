@@ -5,18 +5,16 @@
   
   <title>i&#39;m Song</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一个伤感的故事">
+  <meta name="description" content="公共文件定义 Sina 的分发的 key12345678910111213////  Global.swift//  swift-AFNetworking////  Created by HMC on 16/8/10.//  Copyright © 2016年 SKing. All rights reserved.//import Foundationlet AppKey = &amp;quot;2259">
 <meta property="og:type" content="article">
 <meta property="og:title" content="i'm Song">
-<meta property="og:url" content="http://yoursite.com/2016/12/14/1/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/index.html">
 <meta property="og:site_name" content="i'm Song">
-<meta property="og:description" content="这是一个伤感的故事">
-<meta property="og:image" content="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg">
-<meta property="og:updated_time" content="2016-12-14T09:16:26.000Z">
+<meta property="og:description" content="公共文件定义 Sina 的分发的 key12345678910111213////  Global.swift//  swift-AFNetworking////  Created by HMC on 16/8/10.//  Copyright © 2016年 SKing. All rights reserved.//import Foundationlet AppKey = &amp;quot;2259">
+<meta property="og:updated_time" content="2016-12-14T09:31:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="i'm Song">
-<meta name="twitter:description" content="这是一个伤感的故事">
-<meta name="twitter:image" content="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg">
+<meta name="twitter:description" content="公共文件定义 Sina 的分发的 key12345678910111213////  Global.swift//  swift-AFNetworking////  Created by HMC on 16/8/10.//  Copyright © 2016年 SKing. All rights reserved.//import Foundationlet AppKey = &amp;quot;2259">
   
     <link rel="alternative" href="/atom.xml" title="i&#39;m Song" type="application/atom+xml">
   
@@ -206,11 +204,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-swift/Swift(八)-完成Sina授权,获取accessToken" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/12/14/1/" class="article-date">
-      <time datetime="2016-12-14T08:00:04.000Z" itemprop="datePublished">2016-12-14</time>
+      <a href="/2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
 </a>
     </div>
   
@@ -222,10 +220,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p>这是一个伤感的故事</p>
-</blockquote>
-<p><img src="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg" alt="我的作品"></p>
+        <p>公共文件定义 Sina 的分发的 key<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  Global.swift</span><br><span class="line">//  swift-AFNetworking</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/10.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import Foundation</span><br><span class="line"></span><br><span class="line">let AppKey = &quot;2259417197&quot;</span><br><span class="line">let AppSecret = &quot;d46412dd47e35a075a645d33618a8007&quot;</span><br><span class="line">let redirect_uri = &quot;http://www.jianshu.com&quot;</span><br></pre></td></tr></table></figure></p>
+<p>授权页加载,所用的网络请求已经在<a href="http://www.jianshu.com/p/2735edbc6549" target="_blank" rel="external">上一篇</a>笔记中完成,不懂请查看.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  AuthViewController.swift</span><br><span class="line">//  swift-AFNetworking</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/10.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line">import SVProgressHUD</span><br><span class="line"></span><br><span class="line">class AuthViewController: UIViewController &#123;</span><br><span class="line">    </span><br><span class="line">    @IBOutlet weak var webV: UIWebView!</span><br><span class="line">    </span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        //设置 navigationController</span><br><span class="line">        setNav()</span><br><span class="line">        //加载 webview 的授权</span><br><span class="line">        authorToSina(AppKey, appURL: redirect_uri)</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">// MARK: - 控制器NavigationController的设置</span><br><span class="line">extension AuthViewController &#123;</span><br><span class="line">    </span><br><span class="line">    private func setNav()&#123;</span><br><span class="line">        </span><br><span class="line">        navigationItem.leftBarButtonItem = UIBarButtonItem(title: &quot;返回&quot;, style: .Plain, target: self, action: #selector(back))</span><br><span class="line">        navigationItem.rightBarButtonItem = UIBarButtonItem(title: &quot;自动登录&quot;, style: .Plain, target: self, action: #selector(autoLogin))</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    //返回</span><br><span class="line">    func back() &#123;</span><br><span class="line">        dismissViewControllerAnimated(true, completion: nil)</span><br><span class="line">    &#125;</span><br><span class="line">    //自动登录</span><br><span class="line">    func autoLogin() &#123;</span><br><span class="line">        //思路:注入 js 代码到 webView</span><br><span class="line">        let jsString = &quot;document.getElementById(&apos;userId&apos;).value=&apos;15225124020&apos;;document.getElementById(&apos;passwd&apos;).value=&apos;自己账户的密码&apos;;&quot;</span><br><span class="line">        webV.stringByEvaluatingJavaScriptFromString(jsString)</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    func authorToSina(appkey:String,appURL:String) &#123;</span><br><span class="line">        </span><br><span class="line">        webV.loadRequest(NSURLRequest(URL: NSURL(string: &quot;https://api.weibo.com/oauth2/authorize?client_id=\(appkey)&amp;redirect_uri=\(appURL)&quot;)!))</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//MARK:- webView 代理</span><br><span class="line">extension AuthViewController: UIWebViewDelegate&#123;</span><br><span class="line">    </span><br><span class="line">    func webViewDidStartLoad(webView: UIWebView) &#123;</span><br><span class="line">        SVProgressHUD.show()</span><br><span class="line">    &#125;</span><br><span class="line">    func webViewDidFinishLoad(webView: UIWebView) &#123;</span><br><span class="line">        SVProgressHUD.dismiss()</span><br><span class="line">    &#125;</span><br><span class="line">    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) &#123;</span><br><span class="line">        SVProgressHUD.dismiss()</span><br><span class="line">    &#125;</span><br><span class="line">    //</span><br><span class="line">    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -&gt; Bool &#123;</span><br><span class="line">        </span><br><span class="line">        guard let url = request.URL else &#123;</span><br><span class="line">            </span><br><span class="line">            return true</span><br><span class="line">        &#125;</span><br><span class="line">        guard url.absoluteString.containsString(&quot;code=&quot;)else &#123;</span><br><span class="line">            </span><br><span class="line">            return true</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        let separateArray = url.absoluteString.componentsSeparatedByString(&quot;code=&quot;)</span><br><span class="line">        //获取 code</span><br><span class="line">        let code = separateArray.last</span><br><span class="line">        getAccessToken(code!)</span><br><span class="line">        print(code)</span><br><span class="line">        return false</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// MARK: - 用sina 返回的 code 获取 accessToken</span><br><span class="line">extension AuthViewController &#123;</span><br><span class="line"></span><br><span class="line">    private func getAccessToken(code : String) &#123;</span><br><span class="line">        </span><br><span class="line">        let staticURL = &quot;https://api.weibo.com/oauth2/access_token&quot;</span><br><span class="line">        //&quot;grant_type&quot;:&quot;authorization_code&quot; 固定写法</span><br><span class="line">        let parameters = [&quot;client_id&quot;:AppKey, &quot;client_secret&quot;:AppSecret, &quot;grant_type&quot;:&quot;authorization_code&quot;, &quot;redirect_uri&quot;:redirect_uri, &quot;code&quot;:code]</span><br><span class="line">        AFNetworkingManager.shareObject.requestData(.POST, urlString: staticURL, parameters: parameters) &#123; (result, error) in</span><br><span class="line">            </span><br><span class="line">            print(result)</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -234,13 +230,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/12/14/1/"></a></p>
+        <p><span>本文标题:</span><a href="/2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/"></a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Song 的个人博客">Song</a></p>
-        <p><span>发布时间:</span>2016年12月14日 - 16时00分</p>
-        <p><span>最后更新:</span>2016年12月14日 - 17时16分</p>
+        <p><span>发布时间:</span>2016年12月14日 - 17时31分</p>
+        <p><span>最后更新:</span>2016年12月14日 - 17时31分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/12/14/1/" title="">http://yoursite.com/2016/12/14/1/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/12/14/1/　　作者: Song" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/" title="">http://yoursite.com/2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/　　作者: Song" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -253,7 +249,7 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/12/14/pictures/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/12/14/swift/Swift(五)-按钮点击,新调用的形式/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -263,8 +259,8 @@
     </a>
   
   
-    <a href="/2016/03/17/ss/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">news</div>
+    <a href="/2016/12/14/swift/Swift(十四)-通讯录-AddressBook-封装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -337,7 +333,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/12/14/1/" data-title="" data-url="http://yoursite.com/2016/12/14/1/"></div>
+    <div class="ds-thread" data-thread-key="2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/" data-title="" data-url="http://yoursite.com/2016/12/14/swift/Swift(八)-完成Sina授权,获取accessToken/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -360,13 +356,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/12/14/pictures/" title="上一篇: ">
+            <a href="/2016/12/14/swift/Swift(五)-按钮点击,新调用的形式/" title="上一篇: ">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/03/17/ss/" title="下一篇: news">
+            <a href="/2016/12/14/swift/Swift(十四)-通讯录-AddressBook-封装/" title="下一篇: ">
                 <i class="fa fa-angle-right"></i>
             </a>
         

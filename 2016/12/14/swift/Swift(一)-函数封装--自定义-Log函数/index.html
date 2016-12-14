@@ -5,18 +5,18 @@
   
   <title>i&#39;m Song</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一个伤感的故事">
+  <meta name="description" content="1234567891011121314151617/** 自定义 Log 函数  - parameter log:     log内容 - parameter file:    log 函数所在的文件 - parameter method:  log 函数所在的方法 - parameter lineNum: log 函数所在的行数 */func SLog&amp;lt;T&amp;gt;(log:T,file">
 <meta property="og:type" content="article">
 <meta property="og:title" content="i'm Song">
-<meta property="og:url" content="http://yoursite.com/2016/12/14/1/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/index.html">
 <meta property="og:site_name" content="i'm Song">
-<meta property="og:description" content="这是一个伤感的故事">
-<meta property="og:image" content="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg">
-<meta property="og:updated_time" content="2016-12-14T09:16:26.000Z">
+<meta property="og:description" content="1234567891011121314151617/** 自定义 Log 函数  - parameter log:     log内容 - parameter file:    log 函数所在的文件 - parameter method:  log 函数所在的方法 - parameter lineNum: log 函数所在的行数 */func SLog&amp;lt;T&amp;gt;(log:T,file">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155000-728950378d0e8148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-12-14T09:31:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="i'm Song">
-<meta name="twitter:description" content="这是一个伤感的故事">
-<meta name="twitter:image" content="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg">
+<meta name="twitter:description" content="1234567891011121314151617/** 自定义 Log 函数  - parameter log:     log内容 - parameter file:    log 函数所在的文件 - parameter method:  log 函数所在的方法 - parameter lineNum: log 函数所在的行数 */func SLog&amp;lt;T&amp;gt;(log:T,file">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1155000-728950378d0e8148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="i&#39;m Song" type="application/atom+xml">
   
@@ -206,11 +206,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-swift/Swift(一)-函数封装--自定义-Log函数" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/12/14/1/" class="article-date">
-      <time datetime="2016-12-14T08:00:04.000Z" itemprop="datePublished">2016-12-14</time>
+      <a href="/2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
 </a>
     </div>
   
@@ -222,10 +222,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p>这是一个伤感的故事</p>
-</blockquote>
-<p><img src="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg" alt="我的作品"></p>
+        <p><img src="http://upload-images.jianshu.io/upload_images/1155000-728950378d0e8148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配图.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> 自定义 Log 函数</span><br><span class="line"> </span><br><span class="line"> - parameter log:     log内容</span><br><span class="line"> - parameter file:    log 函数所在的文件</span><br><span class="line"> - parameter method:  log 函数所在的方法</span><br><span class="line"> - parameter lineNum: log 函数所在的行数</span><br><span class="line"> */</span><br><span class="line">func SLog&lt;T&gt;(log:T,file : String = #file , method :String = #function , lineNum : Int = #line) &#123;</span><br><span class="line">    //Debug需要在 info.plist 文件配置,详见配图</span><br><span class="line">    #if Debug</span><br><span class="line">        </span><br><span class="line">    let fileName = ( file as NSString ).lastPathComponent</span><br><span class="line">    print(&quot;[\(fileName) : \(method)] Line:\(lineNum) Log:\(log)&quot; )</span><br><span class="line"></span><br><span class="line">    #endif</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -234,13 +232,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/12/14/1/"></a></p>
+        <p><span>本文标题:</span><a href="/2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/"></a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Song 的个人博客">Song</a></p>
-        <p><span>发布时间:</span>2016年12月14日 - 16时00分</p>
-        <p><span>最后更新:</span>2016年12月14日 - 17时16分</p>
+        <p><span>发布时间:</span>2016年12月14日 - 17时31分</p>
+        <p><span>最后更新:</span>2016年12月14日 - 17时31分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/12/14/1/" title="">http://yoursite.com/2016/12/14/1/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/12/14/1/　　作者: Song" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/" title="">http://yoursite.com/2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/　　作者: Song" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -253,7 +251,7 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/12/14/pictures/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/12/14/swift/Swift(十五)-好用的SwiftMessages的第三方库的封装/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -263,8 +261,8 @@
     </a>
   
   
-    <a href="/2016/03/17/ss/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">news</div>
+    <a href="/2016/12/14/swift/Swift(七)-封装-AFNetworking3-1(未完成)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -337,7 +335,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/12/14/1/" data-title="" data-url="http://yoursite.com/2016/12/14/1/"></div>
+    <div class="ds-thread" data-thread-key="2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/" data-title="" data-url="http://yoursite.com/2016/12/14/swift/Swift(一)-函数封装--自定义-Log函数/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -360,13 +358,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/12/14/pictures/" title="上一篇: ">
+            <a href="/2016/12/14/swift/Swift(十五)-好用的SwiftMessages的第三方库的封装/" title="上一篇: ">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/03/17/ss/" title="下一篇: news">
+            <a href="/2016/12/14/swift/Swift(七)-封装-AFNetworking3-1(未完成)/" title="下一篇: ">
                 <i class="fa fa-angle-right"></i>
             </a>
         

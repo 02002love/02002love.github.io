@@ -5,18 +5,18 @@
   
   <title>i&#39;m Song</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一个伤感的故事">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142////  progressView.swift//  swift-AFNetworking////  Created by HMC on 16/8/11.//  Copyright © 2016年 SKing. All rights reserve">
 <meta property="og:type" content="article">
 <meta property="og:title" content="i'm Song">
-<meta property="og:url" content="http://yoursite.com/2016/12/14/1/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/12/14/swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制/index.html">
 <meta property="og:site_name" content="i'm Song">
-<meta property="og:description" content="这是一个伤感的故事">
-<meta property="og:image" content="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg">
-<meta property="og:updated_time" content="2016-12-14T09:16:26.000Z">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142////  progressView.swift//  swift-AFNetworking////  Created by HMC on 16/8/11.//  Copyright © 2016年 SKing. All rights reserve">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155000-b2d3f919caa72907.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-12-14T09:31:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="i'm Song">
-<meta name="twitter:description" content="这是一个伤感的故事">
-<meta name="twitter:image" content="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142////  progressView.swift//  swift-AFNetworking////  Created by HMC on 16/8/11.//  Copyright © 2016年 SKing. All rights reserve">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1155000-b2d3f919caa72907.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="i&#39;m Song" type="application/atom+xml">
   
@@ -206,11 +206,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/12/14/1/" class="article-date">
-      <time datetime="2016-12-14T08:00:04.000Z" itemprop="datePublished">2016-12-14</time>
+      <a href="/2016/12/14/swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制/" class="article-date">
+      <time datetime="2016-12-14T09:31:27.000Z" itemprop="datePublished">2016-12-14</time>
 </a>
     </div>
   
@@ -222,10 +222,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p>这是一个伤感的故事</p>
-</blockquote>
-<p><img src="http://p1.bqimg.com/4851/8e137e238f8ca4fd.jpg" alt="我的作品"></p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  progressView.swift</span><br><span class="line">//  swift-AFNetworking</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/11.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class progressView: UIView &#123;</span><br><span class="line">    </span><br><span class="line">    var progress : CGFloat = 0.0  &#123;</span><br><span class="line">        //属性改变监听</span><br><span class="line">        didSet &#123;</span><br><span class="line">            print(&quot;改变了&quot;)</span><br><span class="line">            setNeedsDisplay()</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    override func drawRect(rect: CGRect) &#123;</span><br><span class="line">        super.drawRect(rect)</span><br><span class="line">        </span><br><span class="line">        backgroundColor = UIColor.clearColor()</span><br><span class="line">        let arcCenter = CGPoint(x: rect.width * 0.5, y: rect.height * 0.5)</span><br><span class="line">        let radius = rect.width * 0.5 - 3</span><br><span class="line">        let startAngle = CGFloat(-M_PI_2)</span><br><span class="line">        let endAngle = CGFloat(M_PI * 2) * progress + startAngle</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        let bezierPath = UIBezierPath(arcCenter: arcCenter, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)</span><br><span class="line">        </span><br><span class="line">        bezierPath.addLineToPoint(arcCenter)</span><br><span class="line">        bezierPath.closePath()</span><br><span class="line">        </span><br><span class="line">        UIColor(white: 1.0, alpha: 0.8).setFill()</span><br><span class="line">        bezierPath.fill()</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>控件的设置,调用方法如下,点击加载按钮 下载图片显示进度.<br><img src="http://upload-images.jianshu.io/upload_images/1155000-b2d3f919caa72907.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="效果图"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  swift-AFNetworking</span><br><span class="line">//</span><br><span class="line">//  Created by HMC on 16/8/9.</span><br><span class="line">//  Copyright © 2016年 SKing. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line">import HYLabel</span><br><span class="line">import SDWebImage</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    </span><br><span class="line">    @IBAction func GoToAuth(sender: AnyObject) &#123;</span><br><span class="line">        </span><br><span class="line">        let authNav = UINavigationController(rootViewController: AuthViewController())</span><br><span class="line">        presentViewController(authNav, animated: true, completion: nil)</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBOutlet weak var imageView: UIImageView!</span><br><span class="line">    @IBAction func loadView(sender: AnyObject) &#123;</span><br><span class="line">        </span><br><span class="line">        imageView.sd_setImageWithURL(NSURL(string:&quot;http://httpbin.org/image/jpeg&quot;), placeholderImage: nil, options: [], progress: &#123; (current, total) in</span><br><span class="line">            </span><br><span class="line">            self.progress.hidden = false</span><br><span class="line">            self.progress.progress = CGFloat(current) / CGFloat(total)</span><br><span class="line">            </span><br><span class="line">        &#125;) &#123; (_, _, _, _) in</span><br><span class="line">            </span><br><span class="line">            self.progress.hidden = true</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        SDImageCache.sharedImageCache().clearDisk()</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    //懒加载</span><br><span class="line">    lazy var progress : progressView = progressView()</span><br><span class="line">    </span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        view.backgroundColor = UIColor.greenColor()</span><br><span class="line">        view.addSubview(progress)</span><br><span class="line">        progress.bounds = CGRect(x: 0, y: 0, width: 50, height: 50)</span><br><span class="line">        progress.center = CGPoint(x: SCREENWIDTH * 0.5, y: SCREENHEIGHT * 0.5)</span><br><span class="line">        progress.hidden = true</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -234,13 +232,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/12/14/1/"></a></p>
+        <p><span>本文标题:</span><a href="/2016/12/14/swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制/"></a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Song 的个人博客">Song</a></p>
-        <p><span>发布时间:</span>2016年12月14日 - 16时00分</p>
-        <p><span>最后更新:</span>2016年12月14日 - 17时16分</p>
+        <p><span>发布时间:</span>2016年12月14日 - 17时31分</p>
+        <p><span>最后更新:</span>2016年12月14日 - 17时31分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/12/14/1/" title="">http://yoursite.com/2016/12/14/1/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/12/14/1/　　作者: Song" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/12/14/swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制/" title="">http://yoursite.com/2016/12/14/swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/12/14/swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制/　　作者: Song" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -253,7 +251,7 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/12/14/pictures/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/12/14/swift/Swift(十四)-通讯录-AddressBook-封装/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -263,8 +261,8 @@
     </a>
   
   
-    <a href="/2016/03/17/ss/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">news</div>
+    <a href="/2016/12/14/swift/Swift(十一)-QRScanner-二维码生成、识别、扫描/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -337,7 +335,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/12/14/1/" data-title="" data-url="http://yoursite.com/2016/12/14/1/"></div>
+    <div class="ds-thread" data-thread-key="2016/12/14/swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制/" data-title="" data-url="http://yoursite.com/2016/12/14/swift/Swift(十)-Bezier-曲线-实现下载图片进度绘制/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -360,13 +358,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/12/14/pictures/" title="上一篇: ">
+            <a href="/2016/12/14/swift/Swift(十四)-通讯录-AddressBook-封装/" title="上一篇: ">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/03/17/ss/" title="下一篇: news">
+            <a href="/2016/12/14/swift/Swift(十一)-QRScanner-二维码生成、识别、扫描/" title="下一篇: ">
                 <i class="fa fa-angle-right"></i>
             </a>
         
