@@ -84,16 +84,18 @@
 
 
 
-<meta name="description" content="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)">
+<meta name="description">
 <meta property="og:type" content="article">
 <meta property="og:title" content="标签">
 <meta property="og:url" content="http://yoursite.com/2014/12/22/title/index.html">
 <meta property="og:site_name" content="i'm Song">
-<meta property="og:description" content="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)">
-<meta property="og:updated_time" content="2016-12-15T10:08:16.000Z">
+<meta property="og:description">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-12-15T10:19:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)">
+<meta name="twitter:description">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -398,7 +400,7 @@
       
 
       
-        <p><a href="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank" rel="external">http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a>)<a id="more"></a></p>
+        <p><img src="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单独一个或几个角收缩"><br><a id="more"></a><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"hello world!\n"</span>);</span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//核心动画</span></span><br><span class="line">   <span class="built_in">CGRect</span> rect = <span class="built_in">CGRectMake</span>(<span class="number">50</span>, <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span>);</span><br><span class="line">    <span class="built_in">CAShapeLayer</span> * shapeLayer = [<span class="built_in">CAShapeLayer</span> layer];</span><br><span class="line">    shapeLayer.frame = rect;</span><br><span class="line">    shapeLayer.strokeColor = [[<span class="built_in">UIColor</span> redColor] <span class="built_in">CGColor</span>];</span><br><span class="line">    <span class="comment">//圆形</span></span><br><span class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithOvalInRect:rect];</span></span><br><span class="line">    <span class="comment">//长方形</span></span><br><span class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithRect:rect];</span></span><br><span class="line">    <span class="comment">//圆角矩形</span></span><br><span class="line">    <span class="built_in">UIBezierPath</span> * Bpath = [<span class="built_in">UIBezierPath</span> bezierPathWithRoundedRect:rect cornerRadius:<span class="number">60</span>];</span><br><span class="line">    <span class="comment">//单独一个或几个角</span></span><br><span class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(UIRectCornerTopLeft) cornerRadii:(CGSize)&#123; 50,50 &#125;];</span></span><br><span class="line">    </span><br><span class="line">    shapeLayer.path = Bpath.CGPath;</span><br><span class="line">    </span><br><span class="line">    [<span class="keyword">self</span>.view.layer addSublayer:shapeLayer];</span><br></pre></td></tr></table></figure>
 
       
