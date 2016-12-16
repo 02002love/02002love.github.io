@@ -84,17 +84,14 @@
 
 
 
-<meta name="description">
 <meta property="og:type" content="article">
 <meta property="og:title" content="标签">
 <meta property="og:url" content="http://yoursite.com/2014/12/22/title/index.html">
 <meta property="og:site_name" content="i'm Song">
-<meta property="og:description">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:updated_time" content="2016-12-15T10:19:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标签">
-<meta name="twitter:description">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -400,8 +397,8 @@
       
 
       
-        <p><img src="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单独一个或几个角收缩"><br><a id="more"></a><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"hello world!\n"</span>);</span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//核心动画</span></span><br><span class="line">   <span class="built_in">CGRect</span> rect = <span class="built_in">CGRectMake</span>(<span class="number">50</span>, <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span>);</span><br><span class="line">    <span class="built_in">CAShapeLayer</span> * shapeLayer = [<span class="built_in">CAShapeLayer</span> layer];</span><br><span class="line">    shapeLayer.frame = rect;</span><br><span class="line">    shapeLayer.strokeColor = [[<span class="built_in">UIColor</span> redColor] <span class="built_in">CGColor</span>];</span><br><span class="line">    <span class="comment">//圆形</span></span><br><span class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithOvalInRect:rect];</span></span><br><span class="line">    <span class="comment">//长方形</span></span><br><span class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithRect:rect];</span></span><br><span class="line">    <span class="comment">//圆角矩形</span></span><br><span class="line">    <span class="built_in">UIBezierPath</span> * Bpath = [<span class="built_in">UIBezierPath</span> bezierPathWithRoundedRect:rect cornerRadius:<span class="number">60</span>];</span><br><span class="line">    <span class="comment">//单独一个或几个角</span></span><br><span class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(UIRectCornerTopLeft) cornerRadii:(CGSize)&#123; 50,50 &#125;];</span></span><br><span class="line">    </span><br><span class="line">    shapeLayer.path = Bpath.CGPath;</span><br><span class="line">    </span><br><span class="line">    [<span class="keyword">self</span>.view.layer addSublayer:shapeLayer];</span><br></pre></td></tr></table></figure>
+        <p><img src="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单独一个或几个角收缩"><br><a id="more"></a><br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"hello world!\n"</span>);</div><div class="line"><span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//核心动画</span></div><div class="line">   <span class="built_in">CGRect</span> rect = <span class="built_in">CGRectMake</span>(<span class="number">50</span>, <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span>);</div><div class="line">    <span class="built_in">CAShapeLayer</span> * shapeLayer = [<span class="built_in">CAShapeLayer</span> layer];</div><div class="line">    shapeLayer.frame = rect;</div><div class="line">    shapeLayer.strokeColor = [[<span class="built_in">UIColor</span> redColor] <span class="built_in">CGColor</span>];</div><div class="line">    <span class="comment">//圆形</span></div><div class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithOvalInRect:rect];</span></div><div class="line">    <span class="comment">//长方形</span></div><div class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithRect:rect];</span></div><div class="line">    <span class="comment">//圆角矩形</span></div><div class="line">    <span class="built_in">UIBezierPath</span> * Bpath = [<span class="built_in">UIBezierPath</span> bezierPathWithRoundedRect:rect cornerRadius:<span class="number">60</span>];</div><div class="line">    <span class="comment">//单独一个或几个角</span></div><div class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(UIRectCornerTopLeft) cornerRadii:(CGSize)&#123; 50,50 &#125;];</span></div><div class="line">    </div><div class="line">    shapeLayer.path = Bpath.CGPath;</div><div class="line">    </div><div class="line">    [<span class="keyword">self</span>.view.layer addSublayer:shapeLayer];</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -467,28 +464,24 @@
 
     <div class="post-spread">
       
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-  <a class="jiathis_button_tsina"></a>
-  <a class="jiathis_button_tqq"></a>
-  <a class="jiathis_button_weixin"></a>
-  <a class="jiathis_button_cqq"></a>
-  <a class="jiathis_button_douban"></a>
-  <a class="jiathis_button_renren"></a>
-  <a class="jiathis_button_qzone"></a>
-  <a class="jiathis_button_kaixin001"></a>
-  <a class="jiathis_button_copy"></a>
-  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
-  <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-  var jiathis_config={
-    hideMore:false
-  }
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
+        <div class="ds-share flat" data-thread-key="2014/12/22/title/"
+     data-title="标签"
+     data-content=""
+     data-url="http://yoursite.com/2014/12/22/title/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
       
     </div>
   </div>
