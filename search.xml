@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   
-  
     
     <entry>
       <title><![CDATA[news]]></title>
-      <url>http://02002love.github.io/2016/03/17/ss/</url>
-      <content type="html"><![CDATA[<p> #this is a test, come on , join us</p>
-<p><img src="http://p1.bpimg.com/4851/e9e871bba2089b1d.gif" alt="此处输入图片的描述"></p>
-]]></content>
+      <url>%2F2016%2F03%2F17%2Fss%2F</url>
+      <content type="text"><![CDATA[#this is a test, come on , join us]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[标签]]></title>
-      <url>http://02002love.github.io/2014/12/22/title/</url>
-      <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单独一个或几个角收缩"><br><a id="more"></a><br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"hello world!\n"</span>);</div><div class="line"><span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//核心动画</span></div><div class="line">   <span class="built_in">CGRect</span> rect = <span class="built_in">CGRectMake</span>(<span class="number">50</span>, <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span>);</div><div class="line">    <span class="built_in">CAShapeLayer</span> * shapeLayer = [<span class="built_in">CAShapeLayer</span> layer];</div><div class="line">    shapeLayer.frame = rect;</div><div class="line">    shapeLayer.strokeColor = [[<span class="built_in">UIColor</span> redColor] <span class="built_in">CGColor</span>];</div><div class="line">    <span class="comment">//圆形</span></div><div class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithOvalInRect:rect];</span></div><div class="line">    <span class="comment">//长方形</span></div><div class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithRect:rect];</span></div><div class="line">    <span class="comment">//圆角矩形</span></div><div class="line">    <span class="built_in">UIBezierPath</span> * Bpath = [<span class="built_in">UIBezierPath</span> bezierPathWithRoundedRect:rect cornerRadius:<span class="number">60</span>];</div><div class="line">    <span class="comment">//单独一个或几个角</span></div><div class="line">    <span class="comment">//UIBezierPath * Bpath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(UIRectCornerTopLeft) cornerRadii:(CGSize)&#123; 50,50 &#125;];</span></div><div class="line">    </div><div class="line">    shapeLayer.path = Bpath.CGPath;</div><div class="line">    </div><div class="line">    [<span class="keyword">self</span>.view.layer addSublayer:shapeLayer];</div></pre></td></tr></table></figure>
-]]></content>
+      <url>%2F2014%2F12%2F22%2Ftitle%2F</url>
+      <content type="text"><![CDATA[1234567#include&lt;stdio.h&gt;int main()&#123;printf("hello world!\n");return 1;&#125; 1234567891011121314151617//核心动画 CGRect rect = CGRectMake(50, 100, 100, 100); CAShapeLayer * shapeLayer = [CAShapeLayer layer]; shapeLayer.frame = rect; shapeLayer.strokeColor = [[UIColor redColor] CGColor]; //圆形 //UIBezierPath * Bpath = [UIBezierPath bezierPathWithOvalInRect:rect]; //长方形 //UIBezierPath * Bpath = [UIBezierPath bezierPathWithRect:rect]; //圆角矩形 UIBezierPath * Bpath = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:60]; //单独一个或几个角 //UIBezierPath * Bpath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(UIRectCornerTopLeft) cornerRadii:(CGSize)&#123; 50,50 &#125;]; shapeLayer.path = Bpath.CGPath; [self.view.layer addSublayer:shapeLayer];]]></content>
     </entry>
+
     
   
   
