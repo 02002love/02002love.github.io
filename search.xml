@@ -10,7 +10,7 @@
 
     
     <entry>
-      <title><![CDATA[标签11111]]></title>
+      <title><![CDATA[标签]]></title>
       <url>%2F2014%2F12%2F22%2Ftitle%2F</url>
       <content type="text"><![CDATA[1234567#include&lt;stdio.h&gt;int main()&#123;printf("hello world!\n");return 1;&#125; 1234567891011121314151617//核心动画 CGRect rect = CGRectMake(50, 100, 100, 100); CAShapeLayer * shapeLayer = [CAShapeLayer layer]; shapeLayer.frame = rect; shapeLayer.strokeColor = [[UIColor redColor] CGColor]; //圆形 //UIBezierPath * Bpath = [UIBezierPath bezierPathWithOvalInRect:rect]; //长方形 //UIBezierPath * Bpath = [UIBezierPath bezierPathWithRect:rect]; //圆角矩形 UIBezierPath * Bpath = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:60]; //单独一个或几个角 //UIBezierPath * Bpath = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(UIRectCornerTopLeft) cornerRadii:(CGSize)&#123; 50,50 &#125;]; shapeLayer.path = Bpath.CGPath; [self.view.layer addSublayer:shapeLayer];]]></content>
     </entry>
