@@ -82,7 +82,16 @@
 
 
 
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="i'm Song">
@@ -697,10 +706,10 @@
 
       
         
-          <p><img src="http://upload-images.jianshu.io/upload_images/1155000-cc2510749588cf22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="单独一个或几个角收缩"><br>
+          文章访问密码：password
           <!--noindex-->
           <div class="post-more-link text-center">
-            <a class="btn" href="/2014/12/22/title/#more" rel="contents">
+            <a class="btn" href="/2014/12/22/title/">
               阅读全文 &raquo;
             </a>
           </div>
