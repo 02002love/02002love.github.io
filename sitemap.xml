@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://02002love.github.io/tags/index.html</loc>
+    
+    <lastmod>2016-12-18T16:48:54.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://02002love.github.io/categories/index.html</loc>
+    
+    <lastmod>2016-12-18T16:48:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://02002love.github.io/about/index.html</loc>
+    
+    <lastmod>2016-12-18T16:47:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://02002love.github.io/404/index.html</loc>
     
     <lastmod>2016-12-16T11:36:38.000Z</lastmod>
@@ -19,27 +40,6 @@
     <loc>http://02002love.github.io/2016/03/17/ss/</loc>
     
     <lastmod>2016-12-16T10:39:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://02002love.github.io/about/index.html</loc>
-    
-    <lastmod>2016-12-16T06:26:35.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://02002love.github.io/categories/index.html</loc>
-    
-    <lastmod>2016-12-16T05:51:31.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://02002love.github.io/tags/index.html</loc>
-    
-    <lastmod>2016-12-16T05:51:03.000Z</lastmod>
     
   </url>
   
