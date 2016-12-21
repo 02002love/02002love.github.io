@@ -4,19 +4,21 @@
 
     
   <url>
-    <loc>http://02002love.github.io/2016/12/21/poem4%E5%A4%9C%E9%9B%A8/</loc>
-    <lastmod>2016-12-21T15:49:43.000Z</lastmod>
+    <loc>http://02002love.github.io/2016/12/19/Log%20%E5%87%BD%E6%95%B0%E8%87%AA%E5%AE%9A%E4%B9%89/</loc>
+    <lastmod>2016-12-21T15:51:54.000Z</lastmod>
     <data>
         <display>
-        <title>夜雨</title>
-        <pubTime>2016-12-21T15:39:12.000Z</pubTime>
+        <title>自定义 log 函数</title>
+        <pubTime>2016-12-19T14:11:46.000Z</pubTime>
         
-        <tag>小诗</tag>
+        <tag>自学</tag>
+         
+        <tag>我的简书</tag>
          
          
            
              
-              <breadCrumb title="诗" url="http://02002love.github.io/categories/%E8%AF%97/"/>
+              <breadCrumb title="Swift" url="http://02002love.github.io/categories/Swift/"/>
           
         </display>
     </data>
@@ -24,12 +26,12 @@
 
     
   <url>
-    <loc>http://02002love.github.io/2016/12/21/poem%E5%A4%9C%E9%9B%A8/</loc>
-    <lastmod>2016-12-21T15:49:10.000Z</lastmod>
+    <loc>http://02002love.github.io/2016/12/21/poem4%E5%A4%9C%E9%9B%A8/</loc>
+    <lastmod>2016-12-21T15:49:43.000Z</lastmod>
     <data>
         <display>
         <title>夜雨</title>
-        <pubTime>2016-12-21T15:49:10.000Z</pubTime>
+        <pubTime>2016-12-21T15:39:12.000Z</pubTime>
         
         <tag>小诗</tag>
          
@@ -97,28 +99,6 @@
            
              
               <breadCrumb title="诗" url="http://02002love.github.io/categories/%E8%AF%97/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://02002love.github.io/2016/12/19/Log%20%E5%87%BD%E6%95%B0%E8%87%AA%E5%AE%9A%E4%B9%89/</loc>
-    <lastmod>2016-12-19T14:11:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>自定义 log 函数</title>
-        <pubTime>2016-12-19T14:11:46.000Z</pubTime>
-        
-        <tag>自学</tag>
-         
-        <tag>我的简书</tag>
-         
-         
-           
-             
-              <breadCrumb title="Swift" url="http://02002love.github.io/categories/Swift/"/>
           
         </display>
     </data>

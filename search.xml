@@ -4,13 +4,6 @@
     
     <entry>
       <title><![CDATA[夜雨]]></title>
-      <url>%2F2016%2F12%2F21%2Fpoem%E5%A4%9C%E9%9B%A8%2F</url>
-      <content type="text"><![CDATA[香雨如酥贵如珠， 万家未觉身却无。 一心只为他人事， 浓绿艳妆为谁梳？]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[夜雨]]></title>
       <url>%2F2016%2F12%2F21%2Fpoem4%E5%A4%9C%E9%9B%A8%2F</url>
       <content type="text"><![CDATA[香雨如酥贵如珠， 万家未觉身却无。 一心只为他人事， 浓绿艳妆为谁梳？]]></content>
     </entry>
@@ -40,7 +33,7 @@
     <entry>
       <title><![CDATA[自定义 log 函数]]></title>
       <url>%2F2016%2F12%2F19%2FLog%20%E5%87%BD%E6%95%B0%E8%87%AA%E5%AE%9A%E4%B9%89%2F</url>
-      <content type="text"><![CDATA[1234567891011121314151617/** 自定义 Log 函数 - parameter log: log内容 - parameter file: log 函数所在的文件 - parameter method: log 函数所在的方法 - parameter lineNum: log 函数所在的行数 */func SLog&lt;T&gt;(log:T,file : String = #file , method :String = #function , lineNum : Int = #line) &#123; //Debug需要在 info.plist 文件配置,详见配图 #if Debug let fileName = ( file as NSString ).lastPathComponent print(&quot;[\(fileName) : \(method)] Line:\(lineNum) Log:\(log)&quot; ) #endif&#125;]]></content>
+      <content type="text"><![CDATA[1234567891011121314151617/** 自定义 Log 函数 - parameter log: log内容 - parameter file: log 函数所在的文件 - parameter method: log 函数所在的方法 - parameter lineNum: log 函数所在的行数 */func SLog&lt;T&gt;(log:T,file : String = #file , method :String = #function , lineNum : Int = #line) &#123; //Debug需要在 info.plist 文件配置,详见配图 #if Debug let fileName = ( file as NSString ).lastPathComponent print("[\(fileName) : \(method)] Line:\(lineNum) Log:\(log)" ) #endif&#125;]]></content>
     </entry>
 
     
