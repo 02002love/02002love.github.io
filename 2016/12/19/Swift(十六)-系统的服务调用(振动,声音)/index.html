@@ -93,15 +93,16 @@
     })();
 </script>
 
+<meta name="description" content="这个功能无法截图将就着看吧,多谅解;1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950////  ViewController.swift//  systemDevice////  Created by HMC on 2016/10/20.//  Copyright">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自定义 log 函数">
-<meta property="og:url" content="http://02002love.github.io/2016/12/19/Log 函数自定义/index.html">
+<meta property="og:title" content="Swift(十六)-系统的服务调用(振动,声音)">
+<meta property="og:url" content="http://02002love.github.io/2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/index.html">
 <meta property="og:site_name" content="i'm Song">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155000-728950378d0e8148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2016-12-21T15:51:54.000Z">
+<meta property="og:description" content="这个功能无法截图将就着看吧,多谅解;1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950////  ViewController.swift//  systemDevice////  Created by HMC on 2016/10/20.//  Copyright">
+<meta property="og:updated_time" content="2016-12-21T16:13:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="自定义 log 函数">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1155000-728950378d0e8148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="Swift(十六)-系统的服务调用(振动,声音)">
+<meta name="twitter:description" content="这个功能无法截图将就着看吧,多谅解;1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950////  ViewController.swift//  systemDevice////  Created by HMC on 2016/10/20.//  Copyright">
 
 
 
@@ -129,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://02002love.github.io/2016/12/19/Log 函数自定义/"/>
+  <link rel="canonical" href="http://02002love.github.io/2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/"/>
 
 
 
 
 
-  <title> 自定义 log 函数 | i'm Song </title>
+  <title> Swift(十六)-系统的服务调用(振动,声音) | i'm Song </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -314,7 +315,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://02002love.github.io/2016/12/19/Log 函数自定义/">
+  <link itemprop="mainEntityOfPage" href="http://02002love.github.io/2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Song">
@@ -338,7 +339,7 @@
             
             
               
-                自定义 log 函数
+                Swift(十六)-系统的服务调用(振动,声音)
               
             
           </h1>
@@ -351,7 +352,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-19T22:11:46+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-19T21:31:00+08:00">
                 2016-12-19
               </time>
             
@@ -385,8 +386,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/12/19/Log 函数自定义/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/19/Log 函数自定义/" itemprop="commentCount"></span>
+                <a href="/2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -417,8 +418,7 @@
       
 
       
-        <p><img src="http://upload-images.jianshu.io/upload_images/1155000-728950378d0e8148.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配图.png"><br><a id="more"></a>    </p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> 自定义 Log 函数</div><div class="line"> </div><div class="line"> - parameter log:     log内容</div><div class="line"> - parameter file:    log 函数所在的文件</div><div class="line"> - parameter method:  log 函数所在的方法</div><div class="line"> - parameter lineNum: log 函数所在的行数</div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">SLog</span>&lt;T&gt;<span class="params">(log:T,file : String = #file , method :String = #function , lineNum : Int = #line)</span></span> &#123;</div><div class="line">    <span class="comment">//Debug需要在 info.plist 文件配置,详见配图</span></div><div class="line">    #<span class="keyword">if</span> <span class="type">Debug</span></div><div class="line">        </div><div class="line">    <span class="keyword">let</span> fileName = ( file <span class="keyword">as</span> <span class="type">NSString</span> ).lastPathComponent</div><div class="line">    <span class="built_in">print</span>(<span class="string">"[<span class="subst">\(fileName)</span> : <span class="subst">\(method)</span>] Line:<span class="subst">\(lineNum)</span> Log:<span class="subst">\(log)</span>"</span> )</div><div class="line"></div><div class="line">    #endif</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p>这个功能无法截图将就着看吧,多谅解;<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//  ViewController.swift</span></div><div class="line"><span class="comment">//  systemDevice</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//  Created by HMC on 2016/10/20.</span></div><div class="line"><span class="comment">//  Copyright © 2016年 HMC. All rights reserved.</span></div><div class="line"><span class="comment">//</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> UIKit</div><div class="line"><span class="keyword">import</span> AudioToolbox</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</div><div class="line">    <span class="keyword">var</span> sysID:<span class="type">SystemSoundID</span> = <span class="number">0</span></div><div class="line">    </div><div class="line">    <span class="comment">/**</span></div><div class="line">     振动</div><div class="line">     </div><div class="line">     - parameter sender: sender description</div><div class="line">     */</div><div class="line">    <span class="meta">@IBAction</span> <span class="function"><span class="keyword">func</span> <span class="title">shake</span><span class="params">(sender: AnyObject)</span></span> &#123;</div><div class="line">        </div><div class="line">        <span class="type">AudioServicesPlaySystemSound</span>(kSystemSoundID_Vibrate)</div><div class="line">        </div><div class="line">    &#125;</div><div class="line">    <span class="comment">/**</span></div><div class="line">     响铃</div><div class="line">     </div><div class="line">     - parameter sender: sender description</div><div class="line">     */</div><div class="line">    <span class="meta">@IBAction</span> <span class="function"><span class="keyword">func</span> <span class="title">ring</span><span class="params">(sender: AnyObject)</span></span> &#123;</div><div class="line">        </div><div class="line">        <span class="type">AudioServicesPlayAlertSound</span>(sysID)</div><div class="line">        </div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</div><div class="line">        </div><div class="line">        <span class="keyword">super</span>.viewDidLoad()</div><div class="line">        <span class="comment">//预先加载</span></div><div class="line">        <span class="keyword">let</span> path = <span class="type">NSBundle</span>.mainBundle().pathForResource(<span class="string">"ring"</span>, ofType: <span class="string">"wav"</span>)</div><div class="line">        <span class="type">AudioServicesCreateSystemSoundID</span>(<span class="type">NSURL</span>(fileURLWithPath: path!), &amp;sysID)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="keyword">deinit</span>&#123;</div><div class="line">        </div><div class="line">        <span class="comment">//注意释放 service</span></div><div class="line">        <span class="type">AudioServicesDisposeSystemSoundID</span>(sysID)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -469,14 +469,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/19/Swift(十四)-通讯录-AddressBook-封装/" rel="next" title="Swift(十四)-通讯录-AddressBook-封装">
+                <i class="fa fa-chevron-left"></i> Swift(十四)-通讯录-AddressBook-封装
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/19/poem1春前/" rel="prev" title="春前">
-                春前 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/19/Swift(八)-完成Sina授权,获取accessToken/" rel="prev" title="Swift(八)-完成Sina授权,获取accessToken">
+                Swift(八)-完成Sina授权,获取accessToken <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -492,10 +496,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/12/19/Log 函数自定义/"
-     data-title="自定义 log 函数"
+        <div class="ds-share flat" data-thread-key="2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/"
+     data-title="Swift(十六)-系统的服务调用(振动,声音)"
      data-content=""
-     data-url="http://02002love.github.io/2016/12/19/Log 函数自定义/">
+     data-url="http://02002love.github.io/2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -525,8 +529,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/19/Log 函数自定义/"
-           data-title="自定义 log 函数" data-url="http://02002love.github.io/2016/12/19/Log 函数自定义/">
+      <div class="ds-thread" data-thread-key="2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/"
+           data-title="Swift(十六)-系统的服务调用(振动,声音)" data-url="http://02002love.github.io/2016/12/19/Swift(十六)-系统的服务调用(振动,声音)/">
       </div>
     
   </div>
@@ -562,7 +566,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
