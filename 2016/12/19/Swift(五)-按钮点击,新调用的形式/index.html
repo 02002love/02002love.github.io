@@ -93,16 +93,16 @@
     })();
 </script>
 
-<meta name="description" content="123456789101112131415161718192021222324////  ViewController.swift//  SwiftTest2////  Created by HMC on 16/8/8.//  Copyright © 2016年 SKing. All rights reserved.//import UIKitclass ViewController: UIV">
+<meta name="description" content="Swift 的更新迭代所产生的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift(五)-按钮点击,新调用的形式">
 <meta property="og:url" content="http://02002love.github.io/2016/12/19/Swift(五)-按钮点击,新调用的形式/index.html">
 <meta property="og:site_name" content="i'm Song">
-<meta property="og:description" content="123456789101112131415161718192021222324////  ViewController.swift//  SwiftTest2////  Created by HMC on 16/8/8.//  Copyright © 2016年 SKing. All rights reserved.//import UIKitclass ViewController: UIV">
-<meta property="og:updated_time" content="2016-12-26T13:54:07.000Z">
+<meta property="og:description" content="Swift 的更新迭代所产生的">
+<meta property="og:updated_time" content="2016-12-26T14:12:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Swift(五)-按钮点击,新调用的形式">
-<meta name="twitter:description" content="123456789101112131415161718192021222324////  ViewController.swift//  SwiftTest2////  Created by HMC on 16/8/8.//  Copyright © 2016年 SKing. All rights reserved.//import UIKitclass ViewController: UIV">
+<meta name="twitter:description" content="Swift 的更新迭代所产生的">
 
 
 
@@ -418,8 +418,7 @@
       
 
       
-        <a id="more"></a> 
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//  ViewController.swift</span></div><div class="line"><span class="comment">//  SwiftTest2</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//  Created by HMC on 16/8/8.</span></div><div class="line"><span class="comment">//  Copyright © 2016年 SKing. All rights reserved.</span></div><div class="line"><span class="comment">//</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> UIKit</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> btn: <span class="type">UIButton</span>!</div><div class="line">    </div><div class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</div><div class="line">        <span class="keyword">super</span>.viewDidLoad()</div><div class="line">        createVCObjectFromString(<span class="string">"SViewController"</span>)</div><div class="line">        <span class="comment">//#selector(click) 新形式调用点击方法</span></div><div class="line">        btn.addTarget(<span class="keyword">self</span>, action:#selector(click), forControlEvents: .<span class="type">TouchUpInside</span>)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@objc</span> <span class="keyword">private</span>  <span class="function"><span class="keyword">func</span> <span class="title">click</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="built_in">print</span>(<span class="string">"123132"</span>)</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+        <p>Swift 的更新迭代所产生的<br><a id="more"></a><br><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//  ViewController.swift</span></div><div class="line"><span class="comment">//  SwiftTest2</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//  Created by HMC on 16/8/8.</span></div><div class="line"><span class="comment">//  Copyright © 2016年 SKing. All rights reserved.</span></div><div class="line"><span class="comment">//</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> UIKit</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> btn: <span class="type">UIButton</span>!</div><div class="line">    </div><div class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</div><div class="line">        <span class="keyword">super</span>.viewDidLoad()</div><div class="line">        createVCObjectFromString(<span class="string">"SViewController"</span>)</div><div class="line">        <span class="comment">//#selector(click) 新形式调用点击方法</span></div><div class="line">        btn.addTarget(<span class="keyword">self</span>, action:#selector(click), forControlEvents: .<span class="type">TouchUpInside</span>)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@objc</span> <span class="keyword">private</span>  <span class="function"><span class="keyword">func</span> <span class="title">click</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="built_in">print</span>(<span class="string">"123132"</span>)</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -470,8 +469,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/19/Swift(六)-convenience-构造函数/" rel="next" title="Swift(六)-convenience-构造函数">
-                <i class="fa fa-chevron-left"></i> Swift(六)-convenience-构造函数
+              <a href="/2016/12/19/Swift(十)-Bezier-曲线-实现下载图片进度绘制/" rel="next" title="Swift(十)-Bezier-曲线-实现下载图片进度绘制">
+                <i class="fa fa-chevron-left"></i> Swift(十)-Bezier-曲线-实现下载图片进度绘制
               </a>
             
           </div>
