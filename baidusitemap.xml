@@ -288,11 +288,11 @@
 
     
   <url>
-    <loc>http://02002love.github.io/2016/12/19/Swift(%E5%8D%81%E5%9B%9B)-%E9%80%9A%E8%AE%AF%E5%BD%95-AddressBook-%E5%B0%81%E8%A3%85/</loc>
+    <loc>http://02002love.github.io/2016/12/19/Swift(%E5%85%AD)-convenience-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2016-12-26T13:56:27.000Z</lastmod>
     <data>
         <display>
-        <title>Swift(十四)-通讯录-AddressBook-封装</title>
+        <title>Swift(六)-convenience-构造函数</title>
         <pubTime>2016-12-19T13:31:00.000Z</pubTime>
         
         <tag>自学</tag>
@@ -310,11 +310,11 @@
 
     
   <url>
-    <loc>http://02002love.github.io/2016/12/19/Swift(%E5%85%AD)-convenience-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/</loc>
+    <loc>http://02002love.github.io/2016/12/19/Swift(%E5%8D%81%E5%9B%9B)-%E9%80%9A%E8%AE%AF%E5%BD%95-AddressBook-%E5%B0%81%E8%A3%85/</loc>
     <lastmod>2016-12-26T13:56:27.000Z</lastmod>
     <data>
         <display>
-        <title>Swift(六)-convenience-构造函数</title>
+        <title>Swift(十四)-通讯录-AddressBook-封装</title>
         <pubTime>2016-12-19T13:31:00.000Z</pubTime>
         
         <tag>自学</tag>
@@ -354,28 +354,6 @@
 
     
   <url>
-    <loc>http://02002love.github.io/2016/12/19/Swift(%E5%8D%81%E4%B8%83)-%E4%BD%BF%E7%94%A8-SQLite-%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/</loc>
-    <lastmod>2016-12-26T13:48:17.000Z</lastmod>
-    <data>
-        <display>
-        <title>Swift(十七)-使用-SQLite-操作数据库文件</title>
-        <pubTime>2016-12-19T13:31:00.000Z</pubTime>
-        
-        <tag>自学</tag>
-         
-        <tag>我的简书</tag>
-         
-         
-           
-             
-              <breadCrumb title="Swift" url="http://02002love.github.io/categories/Swift/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://02002love.github.io/2016/12/19/Swift(%E5%8D%81%E4%BA%94)-%E5%A5%BD%E7%94%A8%E7%9A%84SwiftMessages%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%9A%84%E5%B0%81%E8%A3%85/</loc>
     <lastmod>2016-12-26T13:48:17.000Z</lastmod>
     <data>
@@ -398,19 +376,21 @@
 
     
   <url>
-    <loc>http://02002love.github.io/2016/12/21/poem3%E5%A4%9C%E8%A1%8C/</loc>
-    <lastmod>2016-12-26T13:46:05.000Z</lastmod>
+    <loc>http://02002love.github.io/2016/12/19/Swift(%E5%8D%81%E4%B8%83)-%E4%BD%BF%E7%94%A8-SQLite-%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2016-12-26T13:48:17.000Z</lastmod>
     <data>
         <display>
-        <title>夜行</title>
-        <pubTime>2016-12-21T15:28:03.000Z</pubTime>
+        <title>Swift(十七)-使用-SQLite-操作数据库文件</title>
+        <pubTime>2016-12-19T13:31:00.000Z</pubTime>
         
-        <tag>小诗</tag>
+        <tag>自学</tag>
+         
+        <tag>我的简书</tag>
          
          
            
              
-              <breadCrumb title="诗" url="http://02002love.github.io/categories/%E8%AF%97/"/>
+              <breadCrumb title="Swift" url="http://02002love.github.io/categories/Swift/"/>
           
         </display>
     </data>
@@ -444,6 +424,26 @@
         <display>
         <title>踏春</title>
         <pubTime>2016-12-19T19:09:16.000Z</pubTime>
+        
+        <tag>小诗</tag>
+         
+         
+           
+             
+              <breadCrumb title="诗" url="http://02002love.github.io/categories/%E8%AF%97/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://02002love.github.io/2016/12/21/poem3%E5%A4%9C%E8%A1%8C/</loc>
+    <lastmod>2016-12-26T13:46:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>夜行</title>
+        <pubTime>2016-12-21T15:28:03.000Z</pubTime>
         
         <tag>小诗</tag>
          
